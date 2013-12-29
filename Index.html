@@ -1,0 +1,369 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion</title>
+<!--<meta name="viewport" content="width-device-width, initial-scale=1.0, maximum scale=1.0, user-scalable=no;" />
+
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>-->
+
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<!--Si ponemos  -data-fullscreen="true"- podemos al hacer un click en pantalla que desaparezcan la cabecera y el pies, para por ejemplo mostrar una foto a pantalla completa y al dar otro clik que aparezcan la cabecera y el pie.
+
+<div data-role="page" id="page1" div data-theme="a" data-fullscreen="true"> -->
+<div data-role="page" id="page1" div data-theme="a">
+	<div data-role="header" data-position="fixed">
+<!--Con data-position="fixed" en el header o en el footert hacemos que si el contenido es muy largo siempre esten visibles la cabecera y el pie -->
+		<h1>Titulo</h1>
+        <a href="#page2"> prev </a>
+        <a href="#page2" data-theme="c"> next </a>
+	</div>
+    <div data-role="navbar">
+    <ul>
+    <li> <a href="#page2"> link1 </a> </li>
+    <li> <a href="#page2" data-icon="arrow-l" data-iconpos="bottom">link2</a> </li>
+    <li> <a href="#page2" data-icon="star"> link4 </a> </li>
+    <li> <a href="#page2"> <img src="img/img2.png"> </a> </li>
+
+    </ul>
+    </div>
+    
+    
+    <div data-role="content" div data-theme="b">	
+		Esto son botones <br>
+        <a href="#page2"> ir a otra página </a> <br>
+        <a href="page_ext.html"> ir a página externa </a> <br>
+        <a href="http://www.20minutos.es" rel="external"> ir a 20minutos </a>
+        <a href="#page2" data-role="button"> ir a otra página </a>
+        <a href="#form" data-role="button" data-theme="c"> ir a formulario </a><br>
+        Botones en la misma linea <br>
+	   	<a href="#" data-role="button" data-inline="true" data-icon="check" data-iconpos="right"> aceptar </a>
+    	<a href="#" data-role="button" data-inline="true" data-icon="refresh" data-iconpos="bottom"> cancelar </a><br>
+        <a href="#confirmacion" data-role="button" data-rel="dialog"> Ver cuadro de dialogo - Eliminar </a> <br>
+        Links con transiciones
+        <a href="#page2" data-role="button" data-transition="slide"> slide </a>
+        <a href="#page2" data-role="button" data-transition="slideup"> slideup </a>
+        <a href="#page2" data-role="button" data-transition="slidedown"> slidedown </a>
+        <a href="#page2" data-role="button" data-transition="pop"> pop </a>
+        <a href="#page2" data-role="button" data-transition="fade"> fade </a>
+        <a href="#page2" data-role="button" data-transition="flip"> flip </a>
+
+	</div>
+	
+    <div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Enlace</a></li>
+         </ul>		
+	</div>
+    <div data-role="content">
+    <div data-role="controlgroup" data-type="horizontal">
+    <a href="#page2" div data-role="button">Enlace</a>
+	<a href="#page2" div data-role="button">Enlace</a>
+	<a href="#page2" div data-role="button">Enlace</a>
+    </div>
+        <div data-role="controlgroup" data-type="vertical">
+    <a href="#page2" div data-role="button">Enlace</a>
+	<a href="#page2" div data-role="button">Enlace</a>
+	<a href="#page2" div data-role="button">Enlace</a>
+    </div>
+    
+    <div data-role="collapsible" data-collapsed="false">
+    <h2>Colapsable</h2>
+    <h3>Subtitulo</h3>
+    No lo tiene fácil y entre sus retos más urgentes, tras la masacre en diciembre en una escuela de Newtown que conmocionó al país, está el de lograr un mayor control a la tenencia y venta de armas, una tarea "con un gran riesgo político" tanto para él como para su partido, el Demócrata. Un difícil camino que ya comenzó esta semana con 23 medidas al respecto.
+    </div>
+        <div data-role="collapsible">
+    <h2>Colapsable</h2>
+    No lo tiene fácil y entre sus retos más urgentes, tras la masacre en diciembre en una escuela de Newtown que conmocionó al país, está el de lograr un mayor control a la tenencia y venta de armas, una tarea "con un gran riesgo político" tanto para él como para su partido, el Demócrata. Un difícil camino que ya comenzó esta semana con 23 medidas al respecto.
+    </div>
+    <div data-role="collapsible-set">
+        <div data-role="collapsible">
+    <h2>Acordeon1</h2>
+    <h3>Subtitulo</h3>
+    No lo tiene fácil y entre sus retos más urgentes, tras la masacre en diciembre en una escuela de Newtown que conmocionó al país, está el de lograr un mayor control a la tenencia y venta de armas, una tarea "con un gran riesgo político" tanto para él como para su partido, el Demócrata. Un difícil camino que ya comenzó esta semana con 23 medidas al respecto.
+    </div>
+        <div data-role="collapsible">
+    <h2>Acordeon2</h2>
+    No lo tiene fácil y entre sus retos más urgentes, tras la masacre en diciembre en una escuela de Newtown que conmocionó al país, está el de lograr un mayor control a la tenencia y venta de armas, una tarea "con un gran riesgo político" tanto para él como para su partido, el Demócrata. Un difícil camino que ya comenzó esta semana con 23 medidas al respecto.
+    </div>
+    </div>
+    <div class="ui-grid-b">
+      <div class="ui-block-a"><img src="img/img1.png" width="100%"><center>mnmnmnmnmnmnmnmn<br>mnmnmnmnmnmnmnmnname</center></div>
+      <div class="ui-block-b"><img src="img/img1.png" width="100%">uyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</div>
+      <div class="ui-block-c"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-a"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-b"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-c"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-a"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-b"><img src="img/img1.png" width="100%"></div>
+      <div class="ui-block-c"><img src="img/img1.png" width="100%"></div>
+    </div>
+    </div>
+  <div data-role="content">
+   <h2>LISTAS</h2> 
+   <ul>
+   <li> <a href="#page2"> Numero 1 </a></li>
+   <li>Numero 2</li>
+   <li>Numero 3</li>
+   <li>Numero 4</li>
+   </ul>
+   <h2>LISTAS</h2> 
+   <ul data-role="listview">
+   <li> <a href="#page2"> Numero 1 </a></li>
+   <li>Numero 2</li>
+   <li>Numero 3</li>
+   <li>Numero 4</li>
+   </ul>
+   <h2>LISTAS</h2> 
+   <ul data-role="listview" data-inset="true">
+   <li> <a href="#page2"> Numero 1 </a></li>
+   <li>Numero 2</li>
+   <li>Numero 3</li>
+   <li>Numero 4</li>
+   </ul>
+   <h2>LISTAS ANIDADAS</h2> 
+   <ul data-role="listview">
+   <li>Numero 1
+   <ul>
+   <li> 1a </li>
+   <li> 1b </li>
+   </ul></li>
+   <li>Numero 2
+   <ul>
+   <li> 2a </li>
+   <li> 2b </li>
+   </ul></li>
+   <li>Numero 3</li>
+   <li>Numero 4</li>
+   </ul>
+   <h2>Divisores en listas</h2> 
+   <ul data-role="listview" data-dividertheme="c">
+   <!-- El data-dividertheme data a todos los divisores que tengamos el mismo tema -->
+   <li data-role="list-divider">Divisor</li>
+   <li> <a href="#page2"> Numero 1 </a>
+        <a href="#page2"> Numero 1 </a></li>
+      <!-- Disponiendo 2 enlaces en el mismo li generamos un formato como el que se muestra el boton izd nos lleva a un sitio y la flecha dcha a otro -->
+   <li><a href="#page2"> Numero 2 </a></li>
+   <li data-role="list-divider">Divisor</li>
+   <li>Numero 3</li>
+   <li>Numero 4</li>
+   </ul>
+
+<h2>Listas personalizadas</h2> 
+   <ul data-role="listview" data-dividertheme="c" data-filter="true">
+   <!-- data-filter="true" es un buscador MUY BUENO -->
+   <li> <a href="#page2"><img src="img/thumb.jpg">Numero 1 </a></li>
+   <!-- Imagen de 80x80 -->
+   <li><a href="#page2"><img class="ui-li-icon" src="img/ba.png"> Numero 2 </a></li>
+     <!-- Icono de 16x16 -->
+   <li ><a href="#page2">Numero 3 <span class="ui-li-count"> 25</span> </a></li>
+   <li><a href="#page2">Numero 4 <p class="ui-li-aside">10.000</p></a></li>
+   <li>
+   <h3>Numero 5</h3> 
+   <p>Esto es un texto</p>
+   </li>
+   </ul>
+    </div>
+    
+	<div data-role="footer" div data-theme="e" class="ui-bar" >
+		<h4>Pie</h4><br>
+        <a href="mailto:danidok@gmail.com" data-role="button">e-mail</a>
+        <a href="tel:672102141" data-role="button">llamar</a><br>
+        
+     <div data-role="controlgroup" data-type="horizontal">
+        <a href="#page2" data-icon="plus"> Agregar </a>
+        <a href="#page2" data-icon="delete"> Eliminar </a>
+        <a href="#page2"> Actualizar </a>
+	</div>
+    
+    pais: <select>
+    <option>España</option>
+    <option>Italia</option>
+    <option>Portugal</option>
+    </select>
+
+	</div>
+
+</div>
+
+<!-- Hay un truco para mantener el pie de las paginas quietos y que haga el efecto de que de una pagina a otra el pie no se mueve - Primero copiamos el mismo footer en las pagina que nos interesan y el el div pral de dichas paginas ponemos data-id="footer1"
+
+ejemplo: <div data-role="page" id="page2" data-id="footer1">
+
+a esto se llama footer persistente-->
+
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Pagina nueva</h1>
+	</div>
+	
+    <div data-role="content" div data-theme="e">	
+		Esto es una prueba <br>
+        <a href="#page1" data-rel="back"> Volver </a><br> 
+        <img src="img/img1.png">
+	</div>
+    
+	<div data-role="footer">
+		<h4>pie</h4>
+    </div>
+
+</div>
+
+
+
+<div data-role="page" id="confirmacion">
+  <div data-role="header">
+    <h1>Eliminar</h1>
+  </div>
+  <div data-role="content">
+  <a href="#page1" data-role="button" > Si, eliminar </a>
+  <a href="#page1" data-role="button" > Cancelar </a>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="form" data-theme="b">
+
+		<div data-role="header" data-theme="e">
+        	<h1>Formulario</h1>
+        </div>
+        
+        <div data-role="content">
+           
+           <form action="enviar.php" method="post" data-ajax="false">
+           
+          
+           
+           	<label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+           	<label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+           	<label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+           
+            <label for="edad">Edad</label>
+            <input type="range" min="0" max="120" id="edad" name="edad">
+            
+            <fieldset data-role="controlgroup">
+            
+            	<legend>Seleccione su estado civil</legend>
+                
+                <input type="checkbox" name="estadocivil" id="soltero" checked /><label for="soltero">Soltero/a</label>
+            
+                <input type="checkbox" name="estadocivil" id="casado"  /><label for="casado">Casado/a</label>
+                
+                <input type="checkbox" name="estadocivil" id="divorciado"  /><label for="divorciado">Divorciado/a</label>                            
+            
+            </fieldset>
+            
+            <label for="suscribe">Te suscribes?</label>
+            <select name="suscribe" id="suscribe" data-role="slider">
+            	<option>Si</option>
+                <option>No</option>
+            </select>
+            
+            <label for="gustos">Gustos</label>
+            <select id="gustos" name="gustos" data-native-menu="false" multiple>
+            	<option data-placeholder="true">Selecciona tus gustos</option>
+                
+                <option value="1">Tecnología</option>
+                <option value="2">Comida</option>
+                <option value="3">Artes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+                <option value="4">Deportes</option>
+            </select>
+           
+            <label for="pais">Pais</label>
+            <select id="pais" name="pais" data-native-menu="false" data-theme="e">
+            	<optgroup label="América">
+            		<option value="AR">Argentina</option>
+            		<option value="MX">México</option>
+                </optgroup>
+                <optgroup label="Europa">
+                	<option value="ES">España</option>
+                </optgroup>
+            </select>
+          
+          <div data-role="fieldcontain">
+           <fieldset data-role="controlgroup">
+           
+           		<legend>Fecha de Nacimiento</legend>
+           
+                
+                <select id="dia" name="dia">
+                	<option>Día</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+                <select id="mes" name="mes" data-native-menu="false">
+                	<option value="0" data-placeholder="true">Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="4">Mayo</option>
+                </select>
+                <select id="anio" name="anio">
+                	<option>Año</option>
+                    <option>1960</option>
+                    <option>1960</option>
+                    <option>1960</option>
+                    <option>1960</option>
+                    <option>1960</option>
+                </select>
+        	</fieldset>
+           </div>
+           
+           <input type="submit" value="Enviar" />
+         
+           
+           </form>
+           
+        </div>        
+        
+        <div data-role="footer" data-theme="b"> 
+        	<h4></h4>     
+        </div>
+
+    </div>
+	
+</div>
+
+
+
+</body>
+</html>
